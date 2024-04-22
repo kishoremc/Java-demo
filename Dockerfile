@@ -6,8 +6,6 @@ COPY . .
 
 RUN mvn clean package
 
-RUN ls -l /usr/src/my-java-app/target/
-
 FROM openjdk:alpine
 
 WORKDIR /usr/src/my-java-app
